@@ -23,3 +23,39 @@ def register():
            print(register())
        else:
            print(exit())
+
+ #    login   
+def Login():
+     print("LOGIN")
+     print("-"*30)
+     username = input("Enter username: ")
+     userpassword = input("enter login password:  ")
+     
+     user = User(username,userpassword)
+     if user is None:
+         print("please enter a valid name and password")
+     else:
+         user.login
+         print(f"Welcome {username}!you are logged in")
+         print("\n")
+         print("-"*30)
+         print('What would you like to do?')
+         while True:
+            print("Use this short codes : cc-create a new password , dc-display passwords, fc-find a specific credential,dd-delete credential,ex -exit" )
+            print("-"*50)
+            user_input = input("answer: ")
+            if user_input == "cc":
+                            choose= input("would you like a custom password or generated password?: c = custom and g = generated password: c/g?")
+                            if  choose == "c":
+                                    
+                                    print("*"*60)
+                                    print("Account name i.e Facebook")
+                                    accountName= input()
+                                    
+                            
+                                    print("User Name")
+                                    user_name= input()
+                            
+                                                        
+                                    print("password")
+                                    user_password= input()
