@@ -1,6 +1,5 @@
 from user import User
 import run
-from random import randint
 from password import generate_password
 
 def register():
@@ -95,7 +94,9 @@ def Login():
                     print("\n")
                     
                     for credential in run.display_credentials():
-                        print(f"{credential.username} {credential.account_name} ......{credential.password_}")
+                        print(f"Account:{credential.account_name}")
+                        print(f"Username:{credential.username}")
+                        print(f"Password:{credential.password_}")
                     print('\n')
                 else:
                     print('\n')
@@ -106,6 +107,8 @@ def Login():
                 print("Enter the account you want to delete:" )
                 deleteAccount = input()
                 print(f"{deleteAccount} account successfuly deleted")
+                print('\n')
+                print("*"*60)
                 
             elif user_input == "ex":
                             print("Bye for now.......")
