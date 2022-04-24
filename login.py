@@ -41,7 +41,12 @@ def Login():
          print("-"*30)
          print('What would you like to do?')
          while True:
-            print("Use this short codes : cc-create a new password , dc-display passwords, fc-find a specific credential,dd-delete credential,ex -exit" )
+            print("Use this short codes : ")
+            print("cc-create a new password")
+            print("dc-display passwords")
+            print("fc-find a specific credential")
+            print("dd-delete credential")
+            print("ex -exit" )
             print("-"*50)
             user_input = input("answer: ")
             if user_input == "cc":
