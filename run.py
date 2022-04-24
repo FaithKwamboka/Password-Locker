@@ -24,3 +24,20 @@ def check_exixting_credentials(account_name):
 
 def  display_credentials():
         return Credential.display_credential()
+
+# main function
+def main():
+        print("Hi,welcome to our password generator app,")
+        ans=input("would you like to generate a password? y for YES or n for NO:  ")
+        if ans == "y":
+                status = input("Already registered?  y/n?")
+                if status == "n":
+                        login.register()
+                        login.Login()
+                else:
+                        login.Login()
+                       
+                 
+if __name__ == '__main__':
+
+     main()   
