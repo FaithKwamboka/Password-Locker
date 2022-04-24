@@ -4,7 +4,7 @@ class Credential:
     """
     credentials_list = []
 
-    def __init__(self, account_name, username, password):
+    def __init__(self, account_name, username, password_):
         self.account_name = account_name
         self.username = username
         self.password_ = password_
@@ -15,7 +15,7 @@ class Credential:
         """
         This method saves user objects to the users list
         """
-        self.new_credential.save_credential()
+        # self.new_credential.save_credential()
         Credential.credentials_list.append(self)
         
     def delete_credential(self):

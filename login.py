@@ -68,7 +68,7 @@ def Login():
                                     print("\n")
                             else:
                                 print("*"*60)
-                                print("Account name eg twitter")
+                                print("Account name i.e Facebook")
                                 accountName= input()
                                     
                             
@@ -81,7 +81,7 @@ def Login():
                                 print("\n")
                                 print(f"New {accountName} credentials created and saved:")
                                 print(f"Name:{user_name}")
-                                print(f"password:{user_password}")
+                                print(f"Password:{user_password}")
                                 print("\n")
                                 print("*"*60)
             elif user_input == "dc":
@@ -90,7 +90,7 @@ def Login():
                     print("\n")
                     
                     for credential in run.display_credentials():
-                        print(f"{credential.username} {credential.account_name} ......{credential.userpassword}")
+                        print(f"{credential.username} {credential.account_name} ......{credential.password_}")
                     print('\n')
                 else:
                     print('\n')
